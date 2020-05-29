@@ -1,0 +1,477 @@
+{
+	"info": {
+		"_postman_id": "33d01b01-484e-407a-a325-d83b029e731b",
+		"name": "agfoods Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://agfoods.in/api/login?email=akk@gmail.com&password=10101",
+					"protocol": "http",
+					"host": [
+						"agfoods",
+						"in"
+					],
+					"path": [
+						"api",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "akk@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "10101"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://agfoods.in/api/register?name=abhishek kus&email=aakk@gmail.com&mobileno=9074200445&password=101011&refer_code=7410132",
+					"protocol": "http",
+					"host": [
+						"agfoods",
+						"in"
+					],
+					"path": [
+						"api",
+						"register"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "abhishek kus"
+						},
+						{
+							"key": "email",
+							"value": "aakk@gmail.com"
+						},
+						{
+							"key": "mobileno",
+							"value": "9074200445"
+						},
+						{
+							"key": "password",
+							"value": "101011"
+						},
+						{
+							"key": "refer_code",
+							"value": "7410132"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "user-profile",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://agfoods.in/api/user-profile?userid=6",
+					"protocol": "http",
+					"host": [
+						"agfoods",
+						"in"
+					],
+					"path": [
+						"api",
+						"user-profile"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "otp-varify",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://agfoods.in/api/verify-otp?userid=6&otp=375352",
+					"protocol": "http",
+					"host": [
+						"agfoods",
+						"in"
+					],
+					"path": [
+						"api",
+						"verify-otp"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "6"
+						},
+						{
+							"key": "otp",
+							"value": "375352"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "home",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://agfoods.in/api/home?latitude=28.5355&longitude=77.3910&sort=1&categoryid=5",
+					"protocol": "http",
+					"host": [
+						"agfoods",
+						"in"
+					],
+					"path": [
+						"api",
+						"home"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "28.5355"
+						},
+						{
+							"key": "longitude",
+							"value": "77.3910"
+						},
+						{
+							"key": "sort",
+							"value": "1"
+						},
+						{
+							"key": "categoryid",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://agfoods.in/api/search?latitude=28.5355&longitude=77.3910",
+					"protocol": "http",
+					"host": [
+						"agfoods",
+						"in"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "latitude",
+							"value": "28.5355"
+						},
+						{
+							"key": "longitude",
+							"value": "77.3910"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restuarant",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://agfoods.in/api/restaurant-details?restaurant_id=40",
+					"protocol": "http",
+					"host": [
+						"agfoods",
+						"in"
+					],
+					"path": [
+						"api",
+						"restaurant-details"
+					],
+					"query": [
+						{
+							"key": "restaurant_id",
+							"value": "40"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "place-order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://agfoods.in/api/place-order?restaurantid=10&userid=12&orderedproducts=rasgulla&orderedproductscount=2&ordertotalamount=100&deliveryaddress=Alpha1&paymenttype=sbi",
+					"protocol": "http",
+					"host": [
+						"agfoods",
+						"in"
+					],
+					"path": [
+						"api",
+						"place-order"
+					],
+					"query": [
+						{
+							"key": "restaurantid",
+							"value": "10"
+						},
+						{
+							"key": "userid",
+							"value": "12"
+						},
+						{
+							"key": "orderedproducts",
+							"value": "rasgulla"
+						},
+						{
+							"key": "orderedproductscount",
+							"value": "2"
+						},
+						{
+							"key": "ordertotalamount",
+							"value": "100"
+						},
+						{
+							"key": "deliveryaddress",
+							"value": "Alpha1"
+						},
+						{
+							"key": "paymenttype",
+							"value": "sbi"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "my-orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://agfoods.in/api/my-orders?userid=5",
+					"protocol": "http",
+					"host": [
+						"agfoods",
+						"in"
+					],
+					"path": [
+						"api",
+						"my-orders"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add-address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://agfoods.in/api/add-address?user_id=12&address_type=home&flat_no=654&address=dsfgc fdg sdfg dfg &landmark=rtygh fghj&phone_no=541242",
+					"protocol": "http",
+					"host": [
+						"agfoods",
+						"in"
+					],
+					"path": [
+						"api",
+						"add-address"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "12"
+						},
+						{
+							"key": "address_type",
+							"value": "home"
+						},
+						{
+							"key": "flat_no",
+							"value": "654"
+						},
+						{
+							"key": "address",
+							"value": "dsfgc fdg sdfg dfg "
+						},
+						{
+							"key": "landmark",
+							"value": "rtygh fghj"
+						},
+						{
+							"key": "phone_no",
+							"value": "541242"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit-address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://agfoods.in/api/edit-address?address_id=2&address_type=home&flat_no=4512&address=sdfggf &landmark=dffg fg ds fg fghj ertyu dfghj&phone_no=84512",
+					"protocol": "http",
+					"host": [
+						"agfoods",
+						"in"
+					],
+					"path": [
+						"api",
+						"edit-address"
+					],
+					"query": [
+						{
+							"key": "address_id",
+							"value": "2"
+						},
+						{
+							"key": "address_type",
+							"value": "home"
+						},
+						{
+							"key": "flat_no",
+							"value": "4512"
+						},
+						{
+							"key": "address",
+							"value": "sdfggf "
+						},
+						{
+							"key": "landmark",
+							"value": "dffg fg ds fg fghj ertyu dfghj"
+						},
+						{
+							"key": "phone_no",
+							"value": "84512"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete-address",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://agfoods.in/api/delete-address?address_id=2",
+					"protocol": "http",
+					"host": [
+						"agfoods",
+						"in"
+					],
+					"path": [
+						"api",
+						"delete-address"
+					],
+					"query": [
+						{
+							"key": "address_id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-address",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://agfoods.in/api/get-address?address_id=3",
+					"protocol": "http",
+					"host": [
+						"agfoods",
+						"in"
+					],
+					"path": [
+						"api",
+						"get-address"
+					],
+					"query": [
+						{
+							"key": "address_id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-all-address",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://agfoods.in/api/get-all-address?user_id=13",
+					"protocol": "http",
+					"host": [
+						"agfoods",
+						"in"
+					],
+					"path": [
+						"api",
+						"get-all-address"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "13"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
